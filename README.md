@@ -2,6 +2,8 @@
 Python 3 resolver for [go-micro](https://github.com/micro/go-micro) grpc
 services.
 
+[![Build Status](https://travis-ci.org/ashcrow/micro-client.svg?branch=master)](https://travis-ci.org/ashcrow/micro-client)
+
 ## Examples
 
 ### Etcd
