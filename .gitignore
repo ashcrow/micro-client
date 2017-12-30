@@ -2,3 +2,4 @@
 *.egg*
 *.pyc
 *.pyo
+build/
