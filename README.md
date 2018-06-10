@@ -4,7 +4,21 @@ services.
 
 [![Build Status](https://travis-ci.org/ashcrow/micro-client.svg?branch=master)](https://travis-ci.org/ashcrow/micro-client)
 
+
 ## Examples
+
+### Compiling
+Make sure you have [the needed protobuf and plugins](https://github.com/micro/go-micro#install-protobuf).
+
+**Notes**:
+* You will need to set or replace the variables!
+* Make sure you have the python package *grpcio-tools* installed!
+
+
+```shell
+    PATH=$PATH:$GOBIN_PATH protoc -I=$SOURCE_OF_MICRO_PROJECT --proto_path=$GOPATH/src:. --python_out=plugins=micro,grpc:. $PATH_TO_PROTO_FILE
+    python -m grpc_tools.protoc -I=$SOURCE_OF_MICRO_PROJECT --python_out=. --grpc_python_out=. $PATH_TO_PROTO_FILE
+```
 
 ### Etcd
 ```python
